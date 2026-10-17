@@ -89,7 +89,7 @@ int main( void )
     {
         if ( button_pressed() )
         {
-            XAxiDma_SimpleTransfer(&dma, RAM_BASE, FRAME_WORDS, XAXIDMA_DEVICE_TO_DMA);
+            XAxiDma_SimpleTransfer(&dma, RAM_BASE, FRAME_WORDS * 4U, XAXIDMA_DEVICE_TO_DMA);
             XGpio_DiscreteWrite( &btn_gpio, 2U, 0x1U );
 
             while ( XAxiDma_Busy( &dma, XAXIDMA_DEVICE_TO_DMA ) )
