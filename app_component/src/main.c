@@ -24,7 +24,9 @@ static u8 button_pressed( void )
 {
     if ( XGpio_DiscreteRead(&btn_gpio, 1U) & CAPTURE_BTN_MASK )
     {
+#if DEBOUNCE_US > 0
         usleep( DEBOUNCE_US );
+#endif
         if ( XGpio_DiscreteRead(&btn_gpio, 1U) & CAPTURE_BTN_MASK )
         {
             return TRUE;
