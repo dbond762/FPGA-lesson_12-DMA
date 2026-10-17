@@ -1,0 +1,77 @@
+###############  Vivado  ###############
+*.jou
+*.log
+*.str
+*.backup.jou
+*.backup.log
+*.rpt
+*.debug
+.Xil/
+vivado*.zip
+vivado_pid*.str
+
+# Генерируемые каталоги проекта (<project>.cache и т.д.)
+*.cache/
+*.hw/
+*.sim/
+*.runs/
+*.ip_user_files/
+*.gen/
+*.hbs/
+*.data/
+*.tmp/
+*.wdb
+*.wcfg
+*.protoinst
+*.jobs/
+webtalk*.jou
+webtalk*.log
+usage_statistics_webtalk.*
+
+# Симуляция
+xsim.dir/
+*.pb
+*.vcd
+*.saif
+
+###############  Vitis  ###############
+# Общие
+.metadata/
+.analytics
+RemoteSystemsTempFiles/
+*.o
+*.d
+*.elf
+*.bin
+*.bit
+*.mcs
+*.sysdef
+*.bda
+*.logfile
+
+# Vitis Unified: компоненты приложения и платформы
+_ide/
+build/
+Debug/
+Release/
+logs/
+.sdk/
+compile_commands.json
+.clangd
+
+# Сгенерированное содержимое платформы
+export/
+hw/
+sw/
+*/ps7_cortexa9_0/
+*/psu_cortexa53_0/
+*/microblaze_0/
+zynq_fsbl/
+zynqmp_fsbl/
+zynqmp_pmufw/
+
+###############  Прочее  ###############
+*.swp
+*~
+.DS_Store
+.vscode/
