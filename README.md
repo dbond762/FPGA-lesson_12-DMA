@@ -74,3 +74,11 @@ Vivado выводит Block RAM. Поддерживаются INCR burst и `WST
 2. В Vivado: *Tools → Associate ELF Files → Simulation Sources* → `app_component/build/app_component.elf`.
 3. *Run Behavioral Simulation*, *Relaunch* после каждой пересборки программы. Кадр
    занимает ≈ 2,7 мс симулированного времени.
+
+## Скріншоти
+
+![Block Design](https://github.com/user-attachments/assets/ff296fde-23f8-47cf-993f-24cd5477d8b2)
+> **Рис. 1** *Block Design*
+
+![Симуляція](https://github.com/user-attachments/assets/1517c047-7918-42db-8596-54491c20e3a2)
+> **Рис. 2** *Симуляція*
